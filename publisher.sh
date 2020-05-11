@@ -4,7 +4,7 @@ echo "Log in to the dev environment with tenant user"
 apictl login dev
 
 echo "Looking for APIs in : $PWD/apis"
-filename='ApiList.txt'
+filename='APIList.txt'
 n=1
 while read line; do
 # reading each line
