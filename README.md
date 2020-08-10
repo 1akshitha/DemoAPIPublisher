@@ -9,6 +9,4 @@ This is a script to import 51 demo APIs to a WSO2 API Manager setup
 
 ### Import APIs to the API manager setup
 
-1. Navigate to the \<DemoAPIPublisher> directory.
-2. Run ```sh publisher.sh```
-3. Login to the tenant user with user credentials.
+1. apictl vcs deploy -e <environment>
