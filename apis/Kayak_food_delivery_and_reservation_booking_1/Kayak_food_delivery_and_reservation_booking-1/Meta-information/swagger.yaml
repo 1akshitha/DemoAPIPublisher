@@ -113,5 +113,5 @@ x-wso2-sandbox-endpoints:
     username: user
 x-wso2-basePath: /food/1
 x-wso2-transports:
-  http: true
-  https: true
+  - http
+  - https

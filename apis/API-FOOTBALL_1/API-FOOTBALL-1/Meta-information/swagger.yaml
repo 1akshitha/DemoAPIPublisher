@@ -93,5 +93,5 @@ x-wso2-sandbox-endpoints:
   type: http
 x-wso2-basePath: /predictions/1
 x-wso2-transports:
-  http: true
-  https: true
+  - http
+  - https
