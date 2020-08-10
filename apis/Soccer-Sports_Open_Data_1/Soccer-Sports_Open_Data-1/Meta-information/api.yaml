@@ -1,0 +1,79 @@
+id:
+  providerName: admin
+  apiName: Soccer-Sports_Open_Data
+  version: "1"
+uuid: b4d69ca1-d71e-4570-b659-6ff284361621
+description: 'Sports Open Data is a project started in June 2015 created by Paolo Riva and Riccardo Quatra. This project was born by a need we''ve found when looking for statistics in Sports: no website offers its data in an Open Data way. Sports Open Data will work in this way: by providing a JSON REST API, Sports Open Data allow you to manage data for every single match we''ve stored on our database. And that''s not over: Sports Open Data has been structured as an Open Organization: feel free to partecipate to our project or simply be part of our community to make it grow day by day. Open Data created by users for users.More Details We''re the first Sports Open Data Service on World Wide Web Sports Open Data is a project started in June 2015 created by Paolo Riva and Riccardo Quatra. This project was born by a need we''ve found when looking for statistics in Sports: no website offers its data in an Open Data way. Sports Open Data will work in this way: by providing a JSON REST API, Sports Open Data allow you to manage data for every single match we''ve stored on our database.And that''s not over: Sports Open Data has been structured as an Open Organization: feel free to partecipate to our project or simply be part of our community to make it grow day by day. Open Data created by users for users.Soccer Sports Open Data API now available on BETA! Hi everybody, Soccer Sports Open Data API are now available on BETA version. You can see in documentation all the apis currently available and some sample data you could test it: stay tuned on Mashape and on Sports Open Data website to keep updated about leagues supports stable during next weeks. For every question or request or simply to notify a bug or an error, feel free to ask in API Support in Mashape or contact us directly on Sports Open Data Website. Really tnx a lot for your interest and stay tuned on Sports Open Data for further sports data. New API Available!Hi Guys! We''re glad to annunce that they''re now available 2 new API requests:Season Top ScorersSeason Teams Available Players Take a look to our API and feel free to make us requests to make our service better than ever! Take a look to our forum (http://forum.sportsopendata.net) to take a look to our new leagues and open support tickets. Now Available Serie A 2016/2017. New season is coming and of course is now available first league on Sports Open Data API: Italian Serie A. From 3 weeks to Serie A kick off, Sports Open Data has finished is migration on new servers and now first league is available. Italian Serie A 2016-2017 could be request on our APIs, here you could find some examples about that:Serie A Teams 2016/2017 ( http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/16-17/teams ).Serie A Standings 2016/2017 ( http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/16-17/standings ) Serie A Rounds 2016/2017 ( http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/16-17/rounds ) Serie A Giornata 1 2016/2017 ( http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/16-17/rounds/giornata-1 ) Juventus Calendar 2016/2017 ( http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/16-17/rounds?team_identifier=a9ef824ba73b0a57e982df21467c3efc ). You could generate your team calendar simply by using the right team identifier.Of course, as we?ve told you on last post, this is only the first of fantastic surprises that they?re going to come further in these days. Feel free to ask us for specific leagues (if you need it) or if you need support about our API.Sports Open Data is a project started in June 2015 created by Paolo Riva and Riccardo Quatra. This project was born by a need we''ve found when looking for statistics in Sports: no website offers its data in an Open Data way. Sports Open Data will work in this way: by providing a JSON REST API, Sports Open Data allow you to manage data for every single match we''ve stored on our database. And that''s not over: Sports Open Data has been structured as an Open Organization: feel free to partecipate to our project or simply be part of our community to make it grow day by day. Open Data created by users for users.'
+type: HTTP
+context: /sports-open-data/1
+contextTemplate: /sports-open-data/{version}
+tags:
+ - soccer
+ - data
+ - sports
+documents: []
+lastUpdated: May 11, 2020 3:23:15 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842549005"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true

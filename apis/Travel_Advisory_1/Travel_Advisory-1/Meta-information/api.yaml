@@ -1,0 +1,80 @@
+id:
+  providerName: admin
+  apiName: Travel_Advisory
+  version: "1"
+uuid: 8fd92775-f6b8-458d-b145-7222edf6cca8
+description: This is a simple REST API that replies with an UTF8 encoded JSON Object. This API provides you with a daily updated list of country advisories. These travel advisories contain a risk value which describes how dangerous a country is from a travellers perspective. This data is available for every country. The number between 0 (zero) and 5 (five) that we show, represent how dangerous a country is. Or better, what level of danger different authorities see for their citizens when travelling a specific country. Often governments publish some sort of advisory for travel destinations for their own citizens. We collect these travel advisories and try to analyze the risk described. We then give each advisory a risk rating between zero and five. The number shown on travel-advisory.info is the average score that we got over all advisories.
+type: HTTP
+context: /advisory/1
+contextTemplate: /advisory/{version}
+tags:
+ - risks
+ - safe
+ - tourism
+ - information
+documents: []
+lastUpdated: May 11, 2020 3:27:56 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842544245"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true

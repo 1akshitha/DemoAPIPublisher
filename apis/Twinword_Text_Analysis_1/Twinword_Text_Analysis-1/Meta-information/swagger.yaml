@@ -1,0 +1,49 @@
+swagger: "2.0"
+info:
+  version: "1"
+  title: Twinword_Text_Analysis
+security:
+ -
+  default: []
+paths:
+  /menu:
+    get:
+      parameters: []
+      responses:
+        200:
+          description: ""
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /order/{orderId}:
+    delete:
+      parameters:
+       -
+        name: orderId
+        in: path
+        description: OrderId
+        required: true
+        type: string
+      responses:
+        200:
+          description: OK. Resource successfully deleted.
+        404:
+          description: Not Found. Resource to be deleted does not exist.
+        412:
+          description: Precondition Failed. The request has not been performed because one of the preconditions is not met.
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+securityDefinitions:
+  default:
+    type: oauth2
+    authorizationUrl: https://test.com
+    flow: implicit
+    scopes:
+      Read API data: ""
+    x-scopes-bindings:
+      Read API data: internal/subscriber
