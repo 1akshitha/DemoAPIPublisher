@@ -1,0 +1,77 @@
+id:
+  providerName: admin
+  apiName: Map
+  version: "1"
+uuid: 8a26ef15-3059-4f19-b1c3-f66a68e4110a
+description: This is an API providing location data traffic info real-time updates etc
+type: HTTP
+context: /map/1
+contextTemplate: /map/{version}
+tags:
+ - maps
+documents: []
+lastUpdated: May 11, 2020 3:11:12 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842561448"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true

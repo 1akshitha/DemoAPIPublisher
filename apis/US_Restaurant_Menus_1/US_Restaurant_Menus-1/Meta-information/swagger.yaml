@@ -1,0 +1,117 @@
+openapi: 3.0.1
+info:
+  title: US_Restaurant_Menus
+  version: "1"
+servers:
+ -
+  url: /
+security:
+ -
+  default: []
+paths:
+  /search/fields:
+    get:
+      summary: get the infromation according to the field
+      description: return list of menus of different restaurants accross us for a given field
+      parameters: []
+      responses:
+        200:
+          description: ok
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /search/geo:
+    post:
+      parameters: []
+      responses:
+        200:
+          description: ok
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /search:
+    post:
+      parameters: []
+      responses:
+        200:
+          description: ok
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /search/id:
+    post:
+      parameters: []
+      responses:
+        200:
+          description: ok
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+  /menu_items:
+    post:
+      summary: menu items of restaurant
+      description: returns list of items from each menu
+      parameters: []
+      responses:
+        200:
+          description: ok
+      security:
+       -
+        default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
+components:
+  securitySchemes:
+    default:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://test.com
+          scopes: {}
+x-wso2-application-security:
+  security-types:
+   - oauth2
+  optional: false
+x-wso2-cors:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+x-wso2-production-endpoints:
+  urls:
+   - https://localhost:9443/am/sample/pizzashack/v1/api/
+  type: http
+  securityConfig:
+    type: basic
+    username: user
+x-wso2-sandbox-endpoints:
+  urls:
+   - https://localhost:9443/am/sample/pizzashack/v1/api/
+  type: http
+  securityConfig:
+    type: basic
+    username: user
+x-wso2-basePath: /restaurants/1
+x-wso2-transports:
+  http: true
+  https: true

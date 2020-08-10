@@ -1,0 +1,79 @@
+id:
+  providerName: admin
+  apiName: Hotels
+  version: "1"
+uuid: 1552b906-6e4e-413f-a2d9-d3ae6b6e23b8
+description: Hotels API helps to query rooms, price, facilities, policities, etc information from many hotels around the world as on official site.
+type: HTTP
+context: /hotels/1
+contextTemplate: /hotels/{version}
+tags:
+ - rates
+ - information
+ - prices
+documents: []
+lastUpdated: May 11, 2020 3:02:12 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842570581"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true

@@ -1,0 +1,81 @@
+id:
+  providerName: admin
+  apiName: Deezer
+  version: "1"
+uuid: 75016ae7-8c11-4bf7-aa59-33645acd9477
+description: Deezer is the No. 1 site for listening to music on demand. Discover more than 30 million tracks, create your own playlists, and share your favourite tracks. Deezer lets you play the music you just have to hear, instantly. Jump in and explore over 56 million tracks (and counting), and discover artists and tracks you'll love with personalised recommendations from the Deezer Editors. Deezer works across all your devices, both online and offline, with no listening limits. It's music at your fingertips for waking up, getting going, chilling out, living life.
+type: HTTP
+context: /deezer/1
+contextTemplate: /deezer/{version}
+tags:
+ - discover
+ - music
+ - playlists
+ - music on demand
+ - tracks
+documents: []
+lastUpdated: May 11, 2020 2:37:41 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842578185"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true

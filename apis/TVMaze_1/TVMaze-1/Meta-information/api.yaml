@@ -1,0 +1,80 @@
+id:
+  providerName: admin
+  apiName: TVMaze
+  version: "1"
+uuid: e1753659-43ae-49a5-870a-f9e653df05a3
+description: TV API - Get show, episode, cast & crew information. Schedules, episode list, tvguide information. If you wish to add TV information to your website or app then the TVMaze API is what you need. We provide a fast and clean REST API that's easy to use The API uses JSON and conforms to the HATEOAS / HAL principles
+type: HTTP
+context: /tv-shows/1
+contextTemplate: /tv-shows/{version}
+tags:
+ - tv
+ - shows
+ - tv guide
+ - episodes
+documents: []
+lastUpdated: May 11, 2020 3:28:56 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842542718"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true

@@ -1,0 +1,78 @@
+id:
+  providerName: admin
+  apiName: New_York_Lottery_Picker
+  version: "1"
+uuid: 678cad17-dc49-4cb5-b16c-9849bd4c4dcf
+description: You like lottery? But you don't like to pick numbers each time?if your answers of these questions are both 'yes'. Try this! New York Lottery Picker could help you to query the numbers, do not waste time to think which number is better, just let machine do that! You will have more time to do other things!
+type: HTTP
+context: /lottery/1
+contextTemplate: /lottery/{version}
+tags:
+ - luck
+ - lottery
+documents: []
+lastUpdated: May 11, 2020 3:14:55 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842557490"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true

@@ -1,0 +1,79 @@
+id:
+  providerName: admin
+  apiName: Utelly
+  version: "1"
+uuid: baed9545-fdd2-4b26-b039-b328e7549118
+description: Utelly is a commercially available Search & Discovery SaaS Platform. Leveraging our line of products, from D2C mobile apps to our advanced API endpoints, we help our clients delight their users with personalised recommendations from across the services available to them, wherever they are. You can find out more about us by visiting our website or via LinkedIn This /lookup endpoint is a basic version of our commercially available proposition. If you would be interested in finding out more then please do not hesitate to get in touch./Lookup Endpoint - Find out where to watch a movie or TV show!!! Nowadays on-demand content can come from so many different sources and it can be difficult find exactly where it's possible to watch that great movie or TV show your friend told you is a must watch!! Welcome to the Utelly API and overcome this with ease. From your search query, we will return matching results and where you can access them. All content from the following services is searchable:Netflix, Amazon Prime, Amazon Instant, iTunes, Now TV ,TalTalk TV Store , Google Play , BBC Iplayer , All 4 , My 5 ,Rakuten TV , ITV Hub
+type: HTTP
+context: /recommendation,search,discovery,movies,tv,stores/1
+contextTemplate: /recommendation,search,discovery,movies,tv,stores/{version}
+tags:
+ - tv
+ - data
+ - movie
+documents: []
+lastUpdated: May 11, 2020 3:32:43 PM
+availableTiers:
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"},"production_endpoints":{"config":null,"url":"https:\/\/localhost:9443\/am\/sample\/pizzashack\/v1\/api\/"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+environments:
+ - Production and Sandbox
+createdTime: "1588842538413"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+accessControl: all
+rating: 0.0
+isLatest: true
+enableStore: true
