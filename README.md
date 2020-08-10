@@ -9,4 +9,6 @@ This is a script to import 51 demo APIs to a WSO2 API Manager setup
 
 ### Import APIs to the API manager setup
 
-1. apictl vcs deploy -e dev
+1. Clone this repo
+2. `cd` to the repository
+3. Run `apictl vcs deploy -e dev`
